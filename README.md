@@ -9,9 +9,9 @@ isolate top gainers/losers, and examine volatility at both sector level and tick
 movement and assess the relationship between Market Cap and P/E (weak positive 
 correlation, r ≈ 0.19). 
 ### Key highlights: 
-*● Technology delivered positive returns in both months (leading cohort), while Healthcare 
+* ● Technology delivered positive returns in both months (leading cohort), while Healthcare 
 was mixed. 
-*● Volatility was higher in June than July at the market level; Energy/Tech showed the 
+* ● Volatility was higher in June than July at the market level; Energy/Tech showed the 
 widest swings at sector level. 
 *● Gainers: CRM (+0.76%), INTU (+0.70%) in June; KO (+0.66%), IBM (+0.60%) in July. 
 *● Losers: GILD (−0.69%), BLK (−0.64%) in June; PM (−0.50%), REGN (−0.48%) in July. 
