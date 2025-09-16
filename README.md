@@ -9,35 +9,35 @@ isolate top gainers/losers, and examine volatility at both sector level and tick
 movement and assess the relationship between Market Cap and P/E (weak positive 
 correlation, r ≈ 0.19). 
 ### Key highlights: 
-* ● Technology delivered positive returns in both months (leading cohort), while Healthcare 
+* Technology delivered positive returns in both months (leading cohort), while Healthcare 
 was mixed. 
-* ● Volatility was higher in June than July at the market level; Energy/Tech showed the 
+* Volatility was higher in June than July at the market level; Energy/Tech showed the 
 widest swings at sector level. 
-*● Gainers: CRM (+0.76%), INTU (+0.70%) in June; KO (+0.66%), IBM (+0.60%) in July. 
-*● Losers: GILD (−0.69%), BLK (−0.64%) in June; PM (−0.50%), REGN (−0.48%) in July. 
-*● Dividend: Average monthly dividend return slightly higher in June than July. 
-*● Size vs Valuation: Market Cap and P/E only weakly correlated (r ≈ 0.19), so size is not 
+* Gainers: CRM (+0.76%), INTU (+0.70%) in June; KO (+0.66%), IBM (+0.60%) in July. 
+* Losers: GILD (−0.69%), BLK (−0.64%) in June; PM (−0.50%), REGN (−0.48%) in July. 
+* Dividend: Average monthly dividend return slightly higher in June than July. 
+* Size vs Valuation: Market Cap and P/E only weakly correlated (r ≈ 0.19), so size is not 
 a proxy for premium valuation. 
 ### 2) Dataset Overview 
-*● Rows/Columns: 4,346 rows × 14 columns (post-cleaning summary from your 
+* Rows/Columns: 4,346 rows × 14 columns (post-cleaning summary from your 
 notebook). 
-*● Timeframe: June and July 2025; counts by month: June = 2,460 rows, July = 1,886 
+* Timeframe: June and July 2025; counts by month: June = 2,460 rows, July = 1,886 
 rows. 
-*● Coverage: Multiple sectors; daily observations per ticker. 
-*● Core fields used: Date, Ticker, Sector, Open/Close, 52-Week High/Low, Market Cap, 
+* Coverage: Multiple sectors; daily observations per ticker. 
+* Core fields used: Date, Ticker, Sector, Open/Close, 52-Week High/Low, Market Cap, 
 P/E Ratio, Dividend info, engineered Daily Return. 
 Data quality: 
-*● Missing values: 0 across key columns after cleaning. 
-*● Dropped 0 rows due to critical missing fields (Date/Ticker/Open/Close/Sector). 
+* Missing values: 0 across key columns after cleaning. 
+* Dropped 0 rows due to critical missing fields (Date/Ticker/Open/Close/Sector). 
 3) Methodology & Metrics 
 ### Data cleaning & typing 
-*● Parsed dates, standardized sector labels, ensured numeric types for prices, Market Cap, 
+* Parsed dates, standardized sector labels, ensured numeric types for prices, Market Cap, 
 P/E, Dividend fields. 
 Feature engineering 
-*● Daily Return = (Close − Previous Close) / Previous Close. 
-*● Monthly Aggregations: 
-○ Sector Performance: mean(Daily Return) by Sector & Month. 
-○ Volatility (Sector): std(Daily Return) by Sector & Month. 
+* Daily Return = (Close − Previous Close) / Previous Close. 
+* Monthly Aggregations: 
+*○ Sector Performance: mean(Daily Return) by Sector & Month. 
+*○ Volatility (Sector): std(Daily Return) by Sector & Month. 
 ○ Volatility (Market Average): mean or median of per-ticker std(Daily Return) by 
 Month (your “average market volatility”). 
 ○ Volatility (Ticker): std(Daily Return) per ticker; compared to the market average. 
